@@ -1,0 +1,16 @@
+Player Guess:
+Validate the player's guess by ensuring the guess is 1 character in length and that it is only a letter character: a through z (uppercase or lowercase) DONE
+Any errors/exceptions should be handled DONE
+
+(DEV NOTE: Because we are checking against a list of single characters, a string of multiple characters
+would not be found within the list)
+
+
+Player wins:
+After winning, the player was prompted to play again:  DONE
+if they agree a new game instance should be created OR the current game instance should have its attributes reset to a NEW game state DONE
+if they disagree, the game should end with a message DONE
+
+(DEV NOTE: in app.py a while true loop is used to keep the game going. At the end of each game,
+an if statement checks to see if the loop should be broken. Breaking the loop.
+Alternatively, Exit() could also have been used)
