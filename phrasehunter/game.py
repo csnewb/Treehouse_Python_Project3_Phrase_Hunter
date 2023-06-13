@@ -66,6 +66,9 @@ class Game():
             try:
                 choice = str(input(prompt))
                 full_alphabet = list(string.ascii_lowercase) + list(string.ascii_uppercase)
+                if settings.DIFFICULTY == 0:
+                    if choice in list(string.ascii_lowercase):
+                        break
                 if choice in full_alphabet:
                     break
             except:
