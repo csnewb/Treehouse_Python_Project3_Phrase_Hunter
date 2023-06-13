@@ -65,8 +65,8 @@ class Game():
         while True:
             try:
                 choice = str(input(prompt))
-                alphabet = list(string.ascii_lowercase)
-                if choice in alphabet:
+                full_alphabet = list(string.ascii_lowercase) + list(string.ascii_uppercase)
+                if choice in full_alphabet:
                     break
             except:
                 print(f"ERROR: Please choose one Letter between A and Z")

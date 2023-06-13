@@ -1,8 +1,13 @@
 # Create your Phrase class logic here.
+import settings
+
 
 class Phrase():
     def __init__(self, phrase: str):
-        self.phrase = phrase.lower()
+        if settings.DIFFICULTY == 0:
+            self.phrase = phrase.lower()
+        if settings.DIFFICULTY == 1:
+            self.phrase = phrase
 
     def display(self, guesses):
         output = ""
