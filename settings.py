@@ -29,7 +29,10 @@ debug_warning = "\n***************************\n" \
                 "debugging print statements will be displayed \n" \
                 "***************************"
 
-
+difficulty_warning = "\n***************************\n" \
+                "DIFFICULTY is currently set to 1 in SETTINGS \n" \
+                "Phrases and Guesses are now CASE-SENSITIVE \n" \
+                "***************************"
 
 greeting = """
 Welcome to:

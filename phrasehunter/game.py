@@ -67,10 +67,11 @@ class Game():
                 choice = str(input(prompt))
                 full_alphabet = list(string.ascii_lowercase) + list(string.ascii_uppercase)
                 if settings.DIFFICULTY == 0:
-                    if choice in list(string.ascii_lowercase):
+                    if choice.lower() in list(string.ascii_lowercase):
                         break
-                if choice in full_alphabet:
-                    break
+                elif settings.DIFFICULTY == 1:
+                    if choice in full_alphabet:
+                        break
             except:
                 print(f"ERROR: Please choose one Letter between A and Z")
         return choice
